@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-color: #0a0a10;
+    --main-text-color: #FFF;
+    --sections-color: #15141b;
+    --second-color: #00e0be;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+}
+
+#header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    height: 6rem;
+    width: 100%;
+    top: 0;
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px 0 var(--second-color);
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#menu-options{
+    display: flex;
+}
+
+#menu-options a{
+    transition: all ease 0.3s;
+}
+
+#menu-options a:hover{
+    color: var(--second-color);
+}
+
+#menu-options a{
+    text-decoration: none;
+    margin: 0 1.8rem 0 0;
+    color: var(--main-text-color);
+}
+
+#firt-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 7rem 2rem 7rem 2rem;
+}
+
+#container-apresentation{
+    width: 500px;
+}
+
+#container-wellcome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#container-wellcome span#span-my-name{
+    font-size: 46pt;
+}
+
+#container-wellcome p span#span-my-type{
+    color: var(--second-color)
+}
+
+#section-who-i-am{
+    display: flex;
+    align-items: center;
+    padding: 10rem 5rem;
+    background-color: var(--sections-color);
+}
+
+#section-who-i-am #container-who-i-am{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#container-who-i-am img{
+    border-radius: 50%;
+    width: 20rem;
+}
+
+#container-desc{
+    width: 70%;
+}
+
+#container-desc h2{
+    color: var(--second-color);
+    margin-bottom: 3rem;
+}
+
+#container-desc p{
+    text-indent: 20px;
+    line-height: 2rem;
+}
