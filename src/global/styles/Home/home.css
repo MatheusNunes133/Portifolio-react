@@ -20,6 +20,7 @@ body{
     background-color: var(--main-color);
 }
 
+/* Header style of the site */
 #header{
     position: fixed;
     display: flex;
@@ -30,6 +31,7 @@ body{
     top: 0;
     background-color: var(--main-color);
     box-shadow: 0 0 10px 0 var(--second-color);
+    z-index: 1;
 }
 
 #menu{
@@ -57,6 +59,7 @@ body{
     color: var(--main-text-color);
 }
 
+/* Estyle of the apresentation */
 #firt-section{
     display: flex;
     align-items: center;
@@ -84,9 +87,13 @@ body{
     color: var(--second-color)
 }
 
+/* Style of the section who i'm */
 #section-who-i-am{
     display: flex;
     align-items: center;
+}
+
+.background-section{
     padding: 10rem 5rem;
     background-color: var(--sections-color);
 }
@@ -115,4 +122,22 @@ body{
 #container-desc p{
     text-indent: 20px;
     line-height: 2rem;
+}
+
+/* Etyle of the projects section */
+
+#section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7rem 0 0 0;
+}
+
+#section-projects h2{
+    margin-bottom: 5rem;
+    color: var(--second-color);
+}
+
+#container-cards{
+    display: flex;
 }
