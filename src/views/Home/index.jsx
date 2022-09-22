@@ -2,6 +2,11 @@ import React from "react";
 import "../../global/styles/Home/home.css";
 
 import WellcomeImage from "../../assets/images/wellcome-image.png";
+import registroPessoas from "../../assets/images/registro-de-pessoas.png";
+import downloadyt from "../../assets/images/download-yt.png";
+import biblioteca from "../../assets/images/biblioteca.png";
+
+import Cards from "../../components/Cards";
 
 export default function Home() {
   return (
@@ -16,7 +21,7 @@ export default function Home() {
             <a href="#section-who-i-am">
               <p>Who I am?</p>
             </a>
-            <a href="#">
+            <a href="#section-projects">
               <p>Projects</p>
             </a>
             <a href="#">
@@ -37,7 +42,7 @@ export default function Home() {
           <img src={WellcomeImage} alt="" />
         </div>
       </section>
-      <section id="section-who-i-am">
+      <section id="section-who-i-am" className="background-section">
         <div id="container-who-i-am">
           <img
             src="https://avatars.githubusercontent.com/u/80282447?v=4"
@@ -57,6 +62,29 @@ export default function Home() {
               improve my knowledge and skills.
             </p>
           </div>
+        </div>
+      </section>
+      <section id="section-projects" className="background-section">
+        <h2>Projects</h2>
+        <div id="container-cards">
+          <Cards
+            image={registroPessoas}
+            title="People Registration System"
+            desc="This one was built using nodejs for the backend. It has data persistence in three different databases, namely: MongoDb, Postgres with Postgis and Neo4J."
+            link="https://github.com/MatheusNunes133/BancoDeDados2-ProjetoFinal"
+          />
+          <Cards
+            image={downloadyt}
+            title="System to Download Videos and Audio"
+            desc="This system was built using python, it aims to receive the url of a youtube video and give the user options to download the video and audio."
+            link="https://github.com/MatheusNunes133/Download-Youtube"
+          />
+          <Cards
+            image={biblioteca}
+            title="Sistema de Controle de Biblioteca"
+            desc="This system was built using the Django framework for web development, it allows a library employee to control the flow of loans, returns and the arrival of new books."
+            link="https://github.com/ifpb-cz-ads/pw1-2021-2-ac-s14-miniprojeto-bibliotecadjango"
+          />
         </div>
       </section>
     </main>
