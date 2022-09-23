@@ -159,3 +159,32 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7rem 2rem 4rem 2rem;
+}
+
+#container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+#container-footer h3{
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+#container-communications{
+    display: flex;
+    gap: 2.3rem;
+}
+
+#container-communications img{
+    width: 100px;
+
+}
