@@ -24,6 +24,7 @@
 #container-cards-acquirements:hover{
     transform: scale(1.2);
     background-color: var(--main-text-color);
+    cursor: pointer;
 }
 
 #container-cards-acquirements img{
