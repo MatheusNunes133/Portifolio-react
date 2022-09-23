@@ -141,3 +141,21 @@ body{
 #container-cards{
     display: flex;
 }
+
+#section-acquirements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 7rem 0 0 0;
+}
+
+#section-acquirements h2{
+    margin-bottom: 5rem;
+    color: var(--second-color);
+}
+
+#container-acquirements{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
