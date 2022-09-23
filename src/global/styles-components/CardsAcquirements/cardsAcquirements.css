@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-color: #0a0a10;
+    --main-text-color: #FFF;
+    --sections-color: #15141b;
+    --second-color: #00e0be;
+}
+
+#container-cards-acquirements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+#container-cards-acquirements:hover{
+    transform: scale(1.2);
+    background-color: var(--main-text-color);
+}
+
+#container-cards-acquirements img{
+    width: 100px;
+}
