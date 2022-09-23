@@ -334,6 +334,29 @@ export default function Home() {
           />
         </div>
       </section>
+      <footer>
+        <h3>© 2022 Matheus Nunes</h3>
+        <div id="container-footer">
+          <h3>Communication</h3>
+          <div id="container-communications">
+            <a href="https://github.com/MatheusNunes133" target="_blank">
+              <img
+                src="https://img.icons8.com/ios-glyphs/100/FFFFFF/github.png"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/matheus-nunes-22b498228/"
+              target="_blank"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
       {modalVisible && (
         <Modal closeModal={setModalVisible} content={valueCards} />
       )}
