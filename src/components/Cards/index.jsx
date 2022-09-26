@@ -3,7 +3,7 @@ import "../../global/styles-components/Cards/cards.css";
 
 export default function Cards({ image, title, desc, link }) {
   return (
-    <div id="cards">
+    <div className="cards">
       <img src={image} alt="" />
       <div>
         <h2>{title}</h2>

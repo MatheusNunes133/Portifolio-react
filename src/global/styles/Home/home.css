@@ -140,6 +140,7 @@ body{
 
 #container-cards{
     display: flex;
+    gap: 5rem;
 }
 
 #section-acquirements{
@@ -188,3 +189,227 @@ footer{
     width: 100px;
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 515px){
+    /* Primeira seção */
+    #firt-section{
+        margin: 7rem 2rem 3rem 2rem
+    }
+    #container-wellcome{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #container-wellcome img{
+        width: 15rem;
+    }
+
+    #container-wellcome span#span-my-name{
+        font-size: 36pt;
+    }
+
+    #container-apresentation{
+        width: auto;
+    }
+
+    /* Segunda seção */
+
+    #container-who-i-am{
+        flex-direction: column;
+    }
+    #container-who-i-am img{
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .background-section{
+        padding: 5rem 2rem;
+    }
+
+    #container-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-who-i-am div{
+        width: 100%;
+    }
+
+    /* Terceira seção */
+    #container-cards{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    #container-cards .cards{
+        height: 100%
+    }
+
+    #container-acquirements{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    #container-acquirements #container-cards-acquirements{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    /* Footer */
+    footer{
+        flex-direction: column;
+    }
+    footer h3{
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 515px) and (max-width: 760px){
+        /* Primeira seção */
+        #firt-section{
+            margin: 7rem 2rem 3rem 2rem
+        }
+        #container-wellcome{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        #container-wellcome img{
+            width: 15rem;
+        }
+    
+        #container-wellcome span#span-my-name{
+            font-size: 36pt;
+        }
+    
+        #container-apresentation{
+            width: auto;
+        }
+    
+        /* Segunda seção */
+    
+        #container-who-i-am{
+            flex-direction: column;
+        }
+        #container-who-i-am img{
+            width: 10rem;
+            margin-bottom: 2rem;
+        }
+    
+        .background-section{
+            padding: 5rem 2rem;
+        }
+    
+        #container-desc{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #container-who-i-am div{
+            width: 100%;
+        }
+    
+        /* Terceira seção */
+        #container-cards{
+            flex-direction: column;
+            gap: 3rem;
+        }
+        #container-cards .cards{
+            height: 100%
+        }
+    
+        #container-acquirements{
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+    
+        #container-acquirements #container-cards-acquirements{
+            width: 7rem;
+            height: 7rem;
+        }
+    
+        /* Footer */
+        footer{
+            flex-direction: column;
+        }
+        footer h3{
+            margin-bottom: 3rem;
+        }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1024px){
+    /* Primeira seção */
+    #firt-section{
+        margin: 7rem 2rem 3rem 2rem
+    }
+    #container-wellcome{
+        align-items: center;
+    }
+    #container-wellcome img{
+        width: 15rem;
+    }
+
+    #container-wellcome span#span-my-name{
+        font-size: 36pt;
+    }
+
+    #container-apresentation{
+        width: auto;
+    }
+
+    /* Segunda seção */
+
+    #container-who-i-am{
+        flex-direction: column;
+    }
+
+    #container-who-i-am img{
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .background-section{
+        padding: 5rem 2rem;
+    }
+
+    #container-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-who-i-am div{
+        width: 100%;
+    }
+
+    /* Terceira seção */
+    #container-cards{
+        gap: 3rem;
+        width: 100%;
+    }
+    #container-cards .cards{
+        height: 100%;
+        width: 12rem;
+    }
+    #container-cards .cards img{
+        width: 12rem;
+    }
+
+    #container-acquirements{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        gap: 20px;
+    }
+
+    #container-acquirements #container-cards-acquirements{
+        width: 7rem;
+        height: 7rem;
+    }
+
+    /* Footer */
+    footer{
+        flex-direction: column;
+    }
+    footer h3{
+        margin-bottom: 3rem;
+    }
+}
+

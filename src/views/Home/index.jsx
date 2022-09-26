@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../global/styles/Home/home.css";
 
 import WellcomeImage from "../../assets/images/wellcome-image.png";
@@ -11,6 +11,10 @@ import CardsAcquirements from "../../components/CardsAcquirements";
 import Modal from "../../components/Modal";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Matheus Nunes - Portifólio";
+  });
+
   const [modalVisible, setModalVisible] = useState(false);
   const [valueCards, setValueCards] = useState({});
 

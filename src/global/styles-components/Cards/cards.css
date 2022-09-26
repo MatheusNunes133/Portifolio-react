@@ -5,28 +5,27 @@
     --second-color: #00e0be;
 }
 
-#cards{
+.cards{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 3rem 0 0;
     box-shadow: 0 0 8px var(--second-color);
     border-radius: 5px;
     transition: all ease 0.3s;
 }
 
-#cards:hover{
+.cards:hover{
     transform: scale(1.1);
 }
 
-#cards img {
+.cards img {
     width: 300px;
     height: 150px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
 
-#cards div{
+.cards div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +36,7 @@
     border-bottom-right-radius: 5px;
 }
 
-#cards div h2{
+.cards div h2{
     align-self: center;
     margin: 1.5rem 0;
     max-width: 300px;
@@ -45,7 +44,7 @@
     color: var(--main-color);
 }
 
-#cards div p{
+.cards div p{
     align-self: flex-start;
     margin-left: 2rem;
     max-width: 250px;
@@ -54,7 +53,7 @@
     line-height: 1.5rem;
 }
 
-#cards div a{
+.cards div a{
     text-decoration: none;
     margin: 1.4rem 0;
     color: var(--second-color);
