@@ -35,8 +35,7 @@ export default function Home() {
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     nodeImage:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    githubImage:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    githubImage: "https://img.icons8.com/ios-glyphs/100/FFFFFF/github.png",
     postgresImage:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     mongoImage:
@@ -61,7 +60,7 @@ export default function Home() {
     <main>
       <header id="header">
         <nav id="menu">
-          <h2>Portifólio</h2>
+          <h2>Matheus Nunes</h2>
           <div id="menu-options">
             <a href="#">
               <p>Home</p>
