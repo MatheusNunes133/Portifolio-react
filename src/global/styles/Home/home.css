@@ -64,7 +64,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
     margin: 7rem 2rem 7rem 2rem;
 }
 
@@ -91,6 +91,7 @@ body{
 #section-who-i-am{
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 
 .background-section{
@@ -124,13 +125,14 @@ body{
     line-height: 2rem;
 }
 
-/* Etyle of the projects section */
+/* Style of the projects section */
 
 #section-projects{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 7rem 0 0 0;
+    height: 100%;
 }
 
 #section-projects h2{
@@ -140,7 +142,8 @@ body{
 
 #container-cards{
     display: flex;
-    gap: 5rem;
+    justify-content: center;
+    gap: 3rem;
 }
 
 #section-acquirements{
@@ -253,6 +256,25 @@ footer{
         width: 7rem;
         height: 7rem;
     }
+            /* Modal */
+            #container-modal #container-info{
+                width: 80%;
+                }
+        
+        
+                #container-modal #container-img{
+                    flex-direction: column;
+                    margin-right: 0;
+                }
+        
+                #container-modal #container-img img{
+                    width: 130px;
+                    margin-bottom: 3rem;
+                }
+                #container-modal #container-img p{
+                    margin-left: 0;
+                }
+            
 
     /* Footer */
     footer{
@@ -316,6 +338,10 @@ footer{
         #container-cards .cards{
             height: 100%
         }
+
+        #section-projects{
+            height: 100%;
+        }
     
         #container-acquirements{
             grid-template-columns: 1fr 1fr 1fr;
@@ -325,6 +351,25 @@ footer{
         #container-acquirements #container-cards-acquirements{
             width: 7rem;
             height: 7rem;
+        }
+
+        /* Modal */
+        #container-modal #container-info{
+        width: 80%;
+        }
+
+
+        #container-modal #container-img{
+            flex-direction: column;
+            margin-right: 0;
+        }
+
+        #container-modal #container-img img{
+            width: 130px;
+            margin-bottom: 3rem;
+        }
+        #container-modal #container-img p{
+            margin-left: 0;
         }
     
         /* Footer */
@@ -385,13 +430,13 @@ footer{
     #container-cards{
         gap: 3rem;
         width: 100%;
+        justify-content: center;
     }
     #container-cards .cards{
-        height: 100%;
-        width: 12rem;
+        width: 30rem;
     }
     #container-cards .cards img{
-        width: 12rem;
+        width: 18rem;
     }
 
     #container-acquirements{
@@ -403,6 +448,25 @@ footer{
         width: 7rem;
         height: 7rem;
     }
+            /* Modal */
+            #container-modal #container-info{
+                width: 80%;
+                }
+        
+        
+                #container-modal #container-img{
+                    flex-direction: column;
+                    margin-right: 0;
+                }
+        
+                #container-modal #container-img img{
+                    width: 130px;
+                    margin-bottom: 3rem;
+                }
+                #container-modal #container-img p{
+                    margin-left: 0;
+                }
+            
 
     /* Footer */
     footer{
