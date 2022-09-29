@@ -23,7 +23,7 @@
 
 #container-cards-acquirements:hover{
     transform: scale(1.2);
-    background-color: var(--main-text-color);
+    background-color: rgb(185, 184, 184);
     cursor: pointer;
 }
 
