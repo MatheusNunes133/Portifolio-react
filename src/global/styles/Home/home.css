@@ -21,42 +21,45 @@ body{
 }
 
 /* Header style of the site */
-#header{
+.bg-menu-background{
     position: fixed;
-    display: flex;
-    align-items: center;
-    padding: 0 2%;
-    height: 6rem;
-    width: 100%;
     top: 0;
-    background-color: var(--main-color);
-    box-shadow: 0 0 10px 0 var(--second-color);
-    z-index: 1;
-}
-
-#menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    z-index: 2;
     width: 100%;
+    box-shadow: 0 0 10px 0 var(--second-color);
+    background-color: var(--main-color);
+    min-height: 6rem;
+    max-height: auto;
 }
 
-#menu-options{
-    display: flex;
+.navbar-brand{
+    color: var(--main-text-color);
 }
 
-#menu-options a{
-    transition: all ease 0.3s;
-}
-
-#menu-options a:hover{
+.navbar-brand:hover{
     color: var(--second-color);
 }
 
-#menu-options a{
-    text-decoration: none;
-    margin: 0 1.8rem 0 0;
+.navbar-brand:focus{
     color: var(--main-text-color);
+}
+
+.nav-link{
+    color: var(--main-text-color);
+    font-size: 12pt;
+}
+
+.nav-link:hover{
+    color: var(--second-color);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link{
+    color: var(--main-text-color);
+}
+
+.navbar-toggler{
+    background-color: var(--main-text-color);
+    border: 0;
 }
 
 /* Estyle of the apresentation */
@@ -91,7 +94,7 @@ body{
 #section-who-i-am{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: auto;
 }
 
 .background-section{
@@ -104,6 +107,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
 }
 
 #container-who-i-am img{
@@ -194,15 +198,6 @@ footer{
 }
 
 @media screen and (min-width: 320px) and (max-width: 515px){
-    #header{
-        justify-content: center;
-    }
-    nav h2{
-        margin-bottom: 1.5rem;
-    }
-    #menu{
-        flex-direction: column;
-    }
     /* Primeira seção */
     #firt-section{
         margin: 7rem 2rem 3rem 2rem
@@ -295,15 +290,7 @@ footer{
 }
 
 @media screen and (min-width: 515px) and (max-width: 760px){
-    #header{
-        justify-content: center;
-    }
-    nav h2{
-        margin-bottom: 1.5rem;
-    }
-    #menu{
-        flex-direction: column;
-    }
+    
         /* Primeira seção */
         #firt-section{
             margin: 7rem 2rem 3rem 2rem
