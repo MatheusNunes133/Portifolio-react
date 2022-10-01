@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../../global/styles/Home/home.css";
 
 import WellcomeImage from "../../assets/images/wellcome-image.png";
 import registroPessoas from "../../assets/images/registro-de-pessoas.png";
@@ -9,6 +8,12 @@ import biblioteca from "../../assets/images/biblioteca.png";
 import Cards from "../../components/Cards";
 import CardsAcquirements from "../../components/CardsAcquirements";
 import Modal from "../../components/Modal";
+
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import "../../global/styles/Home/home.css";
 
 export default function Home() {
   useEffect(() => {
@@ -58,25 +63,20 @@ export default function Home() {
 
   return (
     <main>
-      <header id="header">
-        <nav id="menu">
-          <h2>Matheus Nunes</h2>
-          <div id="menu-options">
-            <a href="#">
-              <p>Home</p>
-            </a>
-            <a href="#section-who-i-am">
-              <p>Who I am?</p>
-            </a>
-            <a href="#section-projects">
-              <p>Projects</p>
-            </a>
-            <a href="#section-acquirements">
-              <p>Acquirements</p>
-            </a>
-          </div>
-        </nav>
-      </header>
+      <Navbar bg="menu-background" expand="lg">
+        <Container>
+          <Navbar.Brand href="#">Portifólio</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#firt-section">Home</Nav.Link>
+              <Nav.Link href="#section-who-i-am">Who i am?</Nav.Link>
+              <Nav.Link href="#section-projects">Projects</Nav.Link>
+              <Nav.Link href="#section-acquirements">Acquirements</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <section id="firt-section">
         <div id="container-wellcome">
           <div id="container-apresentation">
